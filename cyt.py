@@ -1,5 +1,5 @@
 from random import choice
-from time import sleep  # imports 
+from time import sleep  # import
 from os import name, system
 
 sentences = [
@@ -19,7 +19,7 @@ sentences = [
     "Pantyhose and heels are an interesting choice of attire for the beach.", 
     "He uses onomatopoeia as a weapon of mental destruction.", 
     "Nancy was proud that she ran a tight shipwreck.", 
-]
+]  # that's guite a few sentences owo
 
 stories = [
     "Its been difficult, learning to live alone. My mother had forbidden me from learning anything that might lead to independence and departure. I was only recently allowed to boil the jug and make tea, which I excitedly did, adding just enough sedatives to seem like an accident. ",
@@ -30,7 +30,7 @@ stories = [
     "There are ten of us, poor beyond belief, but together we have just enough money to pull one of us out of poverty. We have each signed wills leaving everything to a blank beneficiary and we shoot back our drinks at the same time. It should take less than a minute to find out who gets to try a new life and who gets to escape entirely. ",
     "Sydney had never noticed the door, despite it sitting between the two windows in her lounge-room. Her attention was only drawn to it when she heard knocking and as she approached, she heard her late husband calling to her. Without thinking, she opened and walked through the door on the 17th floor of her building. ",
     "She awoke with a start, heart racing as she realised her hands were coated with blood. As she stared at the mess on the bed, spilling from the still figure beside her, she relaxed. After all, it wasnt her bed.",
-]
+]  # stori
 
 def more():
     story = choice(stories)
