@@ -1,5 +1,5 @@
 from random import choice
-from time import sleep
+from time import sleep  # imports 
 from os import name, system
 
 sentences = [
@@ -109,7 +109,7 @@ def game():
                 _ = system('clear')
             
             print("Okay! Have fun!")
-            
+
             if name == 'nt':
                 _ = system('cls')
             else:
