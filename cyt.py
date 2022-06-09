@@ -1,5 +1,5 @@
 from random import choice
-from time import sleep
+from time import sleep  # imports 
 from os import name, system
 
 sentences = [
@@ -22,14 +22,14 @@ sentences = [
 ]
 
 stories = [
-    "It’s been difficult, learning to live alone. My mother had forbidden me from learning anything that might lead to independence and departure. I was only recently allowed to boil the jug and make tea, which I excitedly did, adding just enough sedatives to seem like an accident. ",
+    "Its been difficult, learning to live alone. My mother had forbidden me from learning anything that might lead to independence and departure. I was only recently allowed to boil the jug and make tea, which I excitedly did, adding just enough sedatives to seem like an accident. ",
     "There were only enough supplies for one of us to survive the winter. We were trapped, isolated in the wilderness at the edge of a harsh winter that would trap us here. Of course, I was the one who had planned it that way. ",
     "The funeral attendees were shocked by the behaviour of the veiled gatecrashers. They had arrived midway through the funeral, chatting and laughing loudly while covered head-to-toe in black. They were far more horrified when the deceased climbed out of the the coffin to join them.",
     "Since my cat learned to push doors open, she often finds herself trapped trapped inside my bedroom, having shut the door herself. As I lie in bed in the dark, I hear her close the, door and feel her snuggle up against me. Minutes later, drifting off, I hear my cat scratching from the other side of my door.",
     "It had been so hard to remember what everyone was allergic to. Nieces with gluten intolerance, grandsons with nut allergies, children with shellfish allergies, yet they all demand that I cook for all of them every Sunday. After hours of thankless work, I finally serve the meal and am certain that no one will ask me to cook again.",
     "There are ten of us, poor beyond belief, but together we have just enough money to pull one of us out of poverty. We have each signed wills leaving everything to a blank beneficiary and we shoot back our drinks at the same time. It should take less than a minute to find out who gets to try a new life and who gets to escape entirely. ",
     "Sydney had never noticed the door, despite it sitting between the two windows in her lounge-room. Her attention was only drawn to it when she heard knocking and as she approached, she heard her late husband calling to her. Without thinking, she opened and walked through the door on the 17th floor of her building. ",
-    "She awoke with a start, heart racing as she realised her hands were coated with blood. As she stared at the mess on the bed, spilling from the still figure beside her, she relaxed. After all, it wasn’t her bed.",
+    "She awoke with a start, heart racing as she realised her hands were coated with blood. As she stared at the mess on the bed, spilling from the still figure beside her, she relaxed. After all, it wasnt her bed.",
 ]
 
 def more():
@@ -109,6 +109,11 @@ def game():
                 _ = system('clear')
             
             print("Okay! Have fun!")
+
+            if name == 'nt':
+                _ = system('cls')
+            else:
+                _ = system('clear')
             sleep(1)
             more()
         elif gaim == 3:
@@ -152,4 +157,4 @@ def main():
     else:
         print("Sorry, that was not a choice!")
 
-main()
+main()  # run the program
